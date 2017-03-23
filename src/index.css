@@ -3,7 +3,9 @@ html, body, #root {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
 }
-
+body{
+  background-color: #fbfe00;
+}
 body, h1, h2, h3 {
   font-weight: 300
 }
@@ -29,14 +31,15 @@ a:hover {
 }
 
 .header {
+  padding: 50px 0;
   display: flex;
   align-items: center;
-  background-color: #1f1f1f;
 }
 .header-title {
   flex: 1;
   font-size: 1.5rem;
   margin: 1rem;
+  color:black;
 }
 .header-date {
   flex: 1;
@@ -50,13 +53,14 @@ a:hover {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: #cf4646;
-  color: white;
+  color: black;
+  height: 60vh;
 }
 .title-h1 {
   font-weight: 300;
   font-size: 4rem;
   margin: 1rem;
+  text-align: center;
 }
 .title-logo {
   height: 12rem;
@@ -68,6 +72,7 @@ a:hover {
   font-weight: 300;
   font-size: 2rem;
   margin: .5rem;
+  text-align: center
 }
 
 .footer {
@@ -78,35 +83,77 @@ a:hover {
   color: white;
 }
 
-.techs-container {
-  margin: 1rem;
-}
-.techs-h2 {
-  font-weight: 300;
-  font-size: 1.5rem;
-}
-.techs {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+/* ----------- iPhone 4 and 4S ----------- */
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .title-h2{
+      font-size: 16px;
+      font-weight: 100;
+    } 
+    .title-h1 {
+      font-weight: 400;
+      font-size: 22px;
+    }
 }
 
-.tech {
-  height: 15rem;
-  width: 15rem;
-  border: 1px solid lightgray;
-  border-radius: 1rem;
-  margin: 1rem;
-  padding: 1rem;
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .title-h2{
+      font-size: 16px;
+      font-weight: 100;
+    } 
+    .title-h1 {
+      font-weight: 400;
+      font-size: 22px;
+    }
 }
-.tech-logo {
-  width: 5rem;
-  height: 5rem;
-  float: right;
-  margin: 0 0 .5rem .5rem;
+
+/* ----------- iPhone 6 ----------- */
+
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+.title-h2{
+      font-size: 16px;
+      font-weight: 100;
+    } 
+    .title-h1 {
+      font-weight: 400;
+      font-size: 22px;
+    }
 }
-.tech-h3 {
-  font-size: 1.5rem;
-  margin: 0 0 2rem 0;
+
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+.title-h2{
+      font-size: 16px;
+      font-weight: 100;
+    } 
+    .title-h1 {
+      font-weight: 400;
+      font-size: 22px;
+    }
 }

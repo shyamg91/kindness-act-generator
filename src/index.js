@@ -1,6 +1,4 @@
 var angular = require('angular');
-
-var techsModule = require('./app/techs/index');
 require('angular-ui-router');
 var routesConfig = require('./routes');
 
@@ -12,7 +10,7 @@ var footer = require('./app/footer');
 require('./index.css');
 
 angular
-  .module('app', [techsModule, 'ui.router'])
+  .module('app', ['ui.router'])
   .config(routesConfig)
   .component('app', main)
   .component('fountainHeader', header)
