@@ -39,6 +39,20 @@ html, body, #root {
     color: white;
     transition : background .5s ease-in;
 }
+#quote{
+    color:black;
+    font-family : Inconsolata;
+    position: relative;
+    font-size: 28px;
+  }
+  .executed {
+    opacity:1;
+    right: 0;
+    -webkit-transition: all 2s ease-in-out;
+      -moz-transition: all 2s ease-in-out;
+      -o-transition: all 2s ease-in-out;
+      transition: all 2s ease-in-out;
+  }
 body{
   background-color: #fbfe00;
 }

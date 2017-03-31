@@ -1,12 +1,15 @@
 <div class="title">
   <h4>A Gentle Reminder to be kind every day.</h4>
-  <h2 class="title-h1" style="font-size: 28px;">{{$ctrl.kindnessMessage.message}}</h2>
-  <p class="primary" ng-click="$ctrl.newAct()">
-    <span>I've done that!</span>
-  </p>
-  <p>
-    <p>Share the Kindness</p>
+  <h2 class="animated executed" id="quote" ng-class="{
+    'fadeInLeft' : $ctrl.fadeIn,
+    'fadeOutRight' : $ctrl.fadeOut
+  }" style="font-size: 28px;">{{$ctrl.kindnessMessage.message}}</h2>
+    <p class="primary" ng-click="$ctrl.newAct()">
+      <span>I've done that!</span>
+    </p>
+    <p>
+      <p>Share the Kindness</p>
 
-    <span><a ng-href="{{$ctrl.url}}" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></span>
-  </p>
+      <span><a ng-href="{{$ctrl.url}}" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></span>
+    </p>
 </div>
