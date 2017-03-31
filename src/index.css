@@ -1,7 +1,43 @@
 html, body, #root {
-  margin: 0;
-  height: 100%;
-  font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+    background: #fbfe00;
+    display:inline-block;
+    color:#000;
+    overflow: hidden;
+    font-family:Inconsolata;
+    margin :0;
+    padding : 0;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    display: inline-block;
+  }
+.logo{
+      text-indent: 75px;
+    padding: 0px 10px;
+    width: 249px;
+    height: 50px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(https://cdn.glitch.com/c8d4e23d-e413-4afd-b399-ba6ce0f2cc5b%2Fhashtagman.png?1490939756999);
+    background-size: contain;
+    background-position-x: 20px;
+    font-size: 24px;
+}
+.primary{
+    margin : 30px 0px;
+    border: 1px solid black;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.primary:hover{
+    background: black;
+    color: white;
+    transition : background .5s ease-in;
 }
 body{
   background-color: #fbfe00;
